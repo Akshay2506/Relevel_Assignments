@@ -1,0 +1,14 @@
+let employee={
+    name:'Akash',
+    age:'45',
+    job:'SDE',
+    address:{
+        city:'Bangalore',
+        state:'Karnataka',
+        country:'India'
+    }
+}
+let {name,age,job}=employee;  // object destructuring
+let {city,state,country}=employee.address;  // nested object destructuring
+console.log(`Name= ${name} Age= ${age} Job= ${job}`);
+console.log(`City= ${city} State= ${state} Country= ${country}`);
