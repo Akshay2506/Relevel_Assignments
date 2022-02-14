@@ -1,0 +1,29 @@
+/*"Program to clone the object and change the property 
+and then iterate the array of objects using inbuilt functions 
+and to console the object property and frame a meaning full sentence*/
+let car=
+[
+    {
+        car: 'Audi',
+        speed : '100km/hr',
+        colour : 'Red'
+    },
+    {
+        car : 'BMW',
+        speed : '150km/hr',
+        colour : 'Yellow',
+    },
+    {
+        car : 'Mercedes',
+        speed : '200km/hr',
+        colour : 'Black'
+    }
+];
+let newcar = car[0]; // cloning a object
+newcar.car = 'Ford'; // changing the property
+car.forEach((i)=> console.log(i)); //iterating the array of objects using forEach
+for([key,value] of Object.entries(car))
+{
+    console.log(`My Car is ${value.car} and Brand is ${value.colour}`); // 
+}
+
