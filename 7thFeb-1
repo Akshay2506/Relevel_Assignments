@@ -1,0 +1,18 @@
+/*Given a positive integer A, find a pair of integer a, b such that
+a and b are positive
+a <= b
+a^2 + b^2 = A
+0<=A<=100000*/
+let b = 1;
+let a;
+function find(sum)
+{
+    for(a=1;a<=b;a++)
+    {
+        b = Math.sqrt(sum - (a*a));
+        if(a*a + b*b == sum)
+        break;
+    }
+    console.log(a,b);
+}
+find(13)
