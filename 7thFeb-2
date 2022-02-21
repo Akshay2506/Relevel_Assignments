@@ -1,0 +1,20 @@
+function lastPosition(n, m, k){
+ 
+    if (m <= n - k + 1){
+       
+        return m + k - 1;
+    }
+ 
+    else{
+     
+        m = m - (n - k + 1);
+ 
+     return (m % n == 0) ? n : (m % n);
+ 
+    }
+}
+ 
+// size here is size of the circle ..
+let size = 5;
+//items hereis the no.of items to deliver...
+let items = 10;
