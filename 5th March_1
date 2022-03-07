@@ -1,14 +1,24 @@
-// in index
+const fs = require('fs');
 
-let obj = 
+const file = 'test.txt';
+const appended = 'Welcome to coding';
+
+fs.open(file,'a',(err,data)=>
 {
-    name : 'Raj',
-    age : 45
-};
-module.exports = obj;
+    if(err) console.log('Error',err.message)
+    else 
+    {
+        fs.write(data,appended,(err,bytes)=>
+        {
+            if(!err) console.log('Appended succesfully')
+            else console.log('error')
+        })
+    
+}
+})
 
-// in index1
-
-let obj = require('./index1')
-obj.name= 'Aakash';
-console.log(obj.name,obj.age)
+fs.readFile('./test.txt','utf8',(err,read)=>
+    {
+        if(!err) console.log(read)
+        else console.log('error')
+    });
