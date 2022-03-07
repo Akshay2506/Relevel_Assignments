@@ -1,0 +1,14 @@
+// in index
+
+let obj = 
+{
+    name : 'Raj',
+    age : 45
+};
+module.exports = obj;
+
+// in index1
+
+let obj = require('./index1')
+obj.name= 'Aakash';
+console.log(obj.name,obj.age)
