@@ -1,0 +1,18 @@
+function print()
+{
+    console.log('App started')
+}
+setTimeout(print,10000)
+
+function print1()
+{
+    for(let i =1;i<=10;++i)
+    {
+        if(i<10)
+        console.log(i)
+        else
+        clearInterval(interval)
+    }
+}
+
+let interval = setInterval(print1,5000)
