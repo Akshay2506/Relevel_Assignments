@@ -1,0 +1,16 @@
+function hi()
+{
+    console.log('hi')
+}
+function hello()
+{
+    console.log('hello')
+}
+function helloworld()
+{
+    setTimeout(()=>console.log('Hello World')),2000
+}
+
+helloworld()
+hi()
+hello()
